@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/1000063-mishka-17/3/">
+</head>
+
+  <body>
+
+    <header class="page-header">
+      <!-- ========================================= выпадающее меню навигация ========================================= -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ========================================= выпадающее меню финиш ========================================= -->
+
+      <div class="site-menu">
+        <a class="site-menu__logo" href="index.html">
+          <img class="site-menu__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина">
+        </a>
+        <button class="site-menu__toggle" type="button" name="button"></button>
+      </div>
+    </header>
+
+    <main class="catalog-page">
+      <section class="catalog">
+        <h2 class="catalog__head">Каталог товаров</h2>
+
+        <div class="catalog__wrapper">
+          <article class="catalog__card">
+            <img class="catalog__photo" src="img/photo-hare-mobile@1x.jpg" width="260" height="196" alt="Фото зайца">
+            <h3 class="catalog__header">Зайчик-попрыгайчик</h3>
+            <p class="catalog__description">Рост 30 см, вес 200 г</p>
+            <a class="catalog__link catalog__link--hare" href="#">
+              <p class="catalog__price catalog__price--icon-cart">1 200 руб.</p>
+            </a>
+          </article>
+
+          <article class="catalog__card">
+            <img class="catalog__photo" src="img/photo-bowl-mobile@1x.jpg"  width="260" height="196" alt="корзинки">
+            <h3 class="catalog__header">Корзинка для белья</h3>
+            <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+
+            <a class="catalog__link catalog__link--bowl" href="#">
+              <p class="catalog__price catalog__price--icon-cart">690 руб.</p>
+            </a>
+          </article>
+
+          <article class="catalog__card">
+            <img class="catalog__photo" src="img/photo-toys-mobile@1x.jpg"  width="260" height="196" alt="Большая корзинка">
+            <h3 class="catalog__header">Большая корзинка для игрушек</h3>
+            <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+            <a class="catalog__link catalog__link--toys" href="#">
+              <p class="catalog__price catalog__price--icon-cart">1 500 руб.</p>
+            </a>
+          </article>
+
+          <section class="catalog__card">
+            <h3 class="catalog__header catalog__header--manufacture">Процесс производства</h3>
+            <iframe class="catalog__video" src="img/video-mobile@1x.jpg"  width="260" height="150" ></iframe>
+            <p class="catalog__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
+          </section>
+        </div>
+      </section>
+    </main>
+
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <section class="footer__social">
+            <a class="footer__social-inst">
+            </a>
+            <a class="footer__social-fb">
+            </a>
+            <a class="footer__social-twit">
+            </a>
+          </section>
+          <section class="footer__maker">
+            <a class="footer__maker-link"><p class="footer__maker-text footer__maker-text--icon-academy">Разработано</p></a>
+          </section>
+        </div>
+      </footer>
+
+      <!-- ========================================= модальное окно ========================================= -->
+      <section class="modal">
+        <p class="modal__head">Добавить  в корзину</p>
+        <p class="modal__text">Выберите размер:</p>
+        <p class="modal__size modal__size--select">s</p>
+        <p class="modal__size">m</p>
+        <p class="modal__size">l</p>
+        <button class="modal__button button" type="button" name="button">Добавить</button>
+      </section>
+      <!-- ========================================= модальное окно финиш ========================================= -->
+
+  </body>
+</html>
