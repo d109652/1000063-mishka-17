@@ -414,9 +414,13 @@ a {
   background-color: #ffffff;
   cursor: pointer; }
   .site-menu__toggle--icon-close {
-    background-image: url("../img/icon-menu-close.svg"); }
+    background-image: url("../img/icon-menu-close.svg");
+    background-size: auto; }
   .site-menu__toggle--icon-hamburger {
-    background-image: url("../img/hamburger.svg"); }
+    background-image: url("../img/hamburger.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center; }
 
 @media (min-width: 768px) {
   .page-header {
